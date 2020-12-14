@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html>  
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A-frame & ARjs</title>
-    <script src="js/aframe.min.js"></script>
-    <script src="js/aframe-ar.js"></script>
-</head>
+    <script src="github/aframe.min.js"></script> 
+    <script src="github/aframe-ar.js"></script>
+  </head>   
+
 <body>
     <a-scene embedded arjs>
-        <a-entity scale=".2 .2 .2"> 
-          <a-entity gltf-model="wraith.gltf" scale="3 3 3" crossOrigin="anonymous">
-          </a-entity>
-        <a-marker-camera preset='Hiro'></a-marker-camera>
-    </a-scene>
+      <a-entity scale=".2 .2 .2"> 
+        <a-entity gltf-model="fox.glb" scale="3 3 3" crossOrigin="anonymous">
+        </a-entity>
+        <a-marker-camera preset='hiro'></a-marker-camera>
+        </a-scene>
 </body>
 </html>
