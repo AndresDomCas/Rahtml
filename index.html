@@ -1,17 +1,42 @@
-<!DOCTYPE html>
-<html>  
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/aframe.min.js"></script> 
-    <script src="js/aframe-ar.js"></script>
-  </head>   
+<!Doctype html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Bootstrap and icons -->   
+        <link rel="stylesheet" href="resource/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resource/css/fontawesome-free/css/all.min.css">
 
-<body>
-  <a-scene embedded arjs>
-    <a-entity scale=".2 .2 .2"> 
-      <a-entity gltf-model="fox.glb" scale="3 3 3" crossOrigin="anonymous">
-      </a-entity>
-    <a-marker-camera preset='hiro'></a-marker-camera>
-  </a-scene>
-</body>
+        <link rel="shortcut icon" href="resource/icon/ra.ico" type="image/x-icon">
+        <title>Realidad Aumentada(RA)</title>
+    </head>
+    <body>
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">  
+                <img src="resource/img/ra.png" width="30" height="30" alt="" loading="lazy">
+                RA
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor03">
+            </div>
+        </nav>
+
+        <div class="container p-4">
+            <h1 class="text-center">Sigue los siguientes pasos</h1>
+            <br>
+            <h3>Paso 1:</h3>
+            <p>Abre la siguiente pagina en otro dispositivo: <a class="btn btn-primary" href="index2.html"><i class="fas fa-vr-cardboard"> Realidad Aumentada</i></a></p>
+            <h3 >Paso 2:</h3> 
+            <p>Escanea o imprime <a href="resource/img/hiro.png" target="_blank">esta imagen</a> para ver el contenido a través de la cámara.</p>
+
+        </div>
+
+        <script src="resource/js/jquery.min.js"></script>
+        <script src="resource/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
